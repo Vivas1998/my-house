@@ -62,7 +62,8 @@ public class Picture
         countryside.changeSize(800);
         countryside.makeVisible();
         
-        sun.slowMoveVertical(-100);
+        sun.moveVertical(100);
+        sun.slowMoveVertical(-150);
     }
 
     /**
@@ -93,5 +94,10 @@ public class Picture
             sun.changeColor("yellow");
             countryside.changeColor("green");
         }
+    }
+    
+    public void atardecer()
+    {
+        sun.slowMoveVertical(300);
     }
 }
